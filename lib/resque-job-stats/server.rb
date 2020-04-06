@@ -59,7 +59,7 @@ module Resque
             # We have little choice in using this funky name - Resque
             # already has a "Stats" tab, and it doesn't like
             # tab names with spaces in it (it translates the url as job%20stats)
-            app.tabs << "Job_Stats"
+            app.tabs << "Job Stats"
 
             app.get '/job_history/:job_class' do
               @job_class = Resque::Plugins::JobStats.measured_jobs.find { |j| j.to_s == params[:job_class] }

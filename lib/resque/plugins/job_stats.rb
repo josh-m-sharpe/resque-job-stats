@@ -6,6 +6,7 @@ require 'resque/plugins/job_stats/duration'
 require 'resque/plugins/job_stats/timeseries'
 require 'resque/plugins/job_stats/statistic'
 require 'resque/plugins/job_stats/history'
+require 'resque-job-stats/server'
 
 module Resque
   module Plugins
@@ -28,3 +29,4 @@ module Resque
     end
   end
 end
+

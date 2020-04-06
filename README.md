@@ -107,12 +107,6 @@ class MyJob
 end
 ```
 
-The interface can be included in your app like this:
-
-```ruby
-require 'resque-job-stats/server'
-```
-
 If you wish to display only certain metrics, you can filter the metrics accordingly.  The default metrics can be found in Resque::Plugins::JobStats::Statistic.
 
 ```ruby
